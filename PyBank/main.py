@@ -35,3 +35,12 @@ print (f"Total: ${total_gross}")
 print (f"Average Change: ${round(monthly_change,2)}")
 print (f"Greatest Increase in Profits: {month_increase} ( ${profit_increase} )")
 print (f"Greatest Decrease in Profits: {month_decrease} ( ${profit_decrease} )")
+
+with open('Financial_Analysis.txt', 'w') as writer:
+    writer.write ("Financial Analysis")
+    writer.write ("----------------------------")
+    writer.write(f"Total Months: {len(month)}")
+    writer.write (f"Total: ${total_gross}")
+    writer.write (f"Average Change: ${round(monthly_change,2)}")
+    writer.write (f"Greatest Increase in Profits: {month_increase} ( ${profit_increase} )")
+    writer.write (f"Greatest Decrease in Profits: {month_decrease} ( ${profit_decrease} )")
